@@ -1,5 +1,5 @@
 import React from 'react';
-import MapboxGL from '@mapbox/react-native-mapbox-gl';
+import MapboxGL from '@react-native-mapbox-gl/maps';
 
 import sheet from '../styles/sheet';
 import {onSortOptions} from '../utils';
@@ -45,10 +45,16 @@ class ShowMap extends React.Component {
       >
         <MapboxGL.MapView
           showUserLocation={true}
-          zoomLevel={12}
+          zoomScale={16}
+          zoomTo={16}
+          flyTo={[ 113.26147, 23.13162]}
+          moveTo={[ 113.26147, 23.13162]}
+          centerContent={[ 113.26147, 23.13162]}
+          zoomEnabled={true}
           userTrackingMode={MapboxGL.UserTrackingModes.Follow}
           styleURL={this.state.styleURL}
           style={sheet.matchParent}
+          localizeLabels={'zh'}
         />
       </TabBarPage>
     );
