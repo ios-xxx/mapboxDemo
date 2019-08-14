@@ -1,5 +1,5 @@
 import React from 'react';
-import MapboxGL from '@mapbox/react-native-mapbox-gl';
+import MapboxGL from '@react-native-mapbox-gl/maps';
 import {
   FlatList,
   Modal,
@@ -20,37 +20,37 @@ import {IS_ANDROID} from './utils';
 import config from './utils/config';
 // Examples
 import ShowMap from './components/ShowMap';
-import SetPitch from './components/SetPitch';
-import SetBearing from './components/SetBearing';
-import ShowClick from './components/ShowClick';
-import FlyTo from './components/FlyTo';
-import FitBounds from './components/FitBounds';
-import SetUserTrackingModes from './components/SetUserTrackingModes';
-import SetUserLocationVerticalAlignment from './components/SetUserLocationVerticalAlignment';
-import ShowRegionChange from './components/ShowRegionChange';
-import CustomIcon from './components/CustomIcon';
-import YoYo from './components/YoYo';
-import EarthQuakes from './components/EarthQuakes';
-import GeoJSONSource from './components/GeoJSONSource';
-import WatercolorRasterTiles from './components/WatercolorRasterTiles';
-import TwoByTwo from './components/TwoByTwo';
-import IndoorBuilding from './components/IndoorBuilding';
-import QueryAtPoint from './components/QueryAtPoint';
-import QueryWithRect from './components/QueryWithRect';
-import ShapeSourceIcon from './components/ShapeSourceIcon';
-import CustomVectorSource from './components/CustomVectorSource';
-import ShowPointAnnotation from './components/ShowPointAnnotation';
-import CreateOfflineRegion from './components/CreateOfflineRegion';
-import DriveTheLine from './components/DriveTheLine';
-import ImageOverlay from './components/ImageOverlay';
-import DataDrivenCircleColors from './components/DataDrivenCircleColors';
-import ChoroplethLayerByZoomLevel from './components/ChoroplethLayerByZoomLevel';
-import PointInMapView from './components/PointInMapView';
-import TakeSnapshot from './components/TakeSnapshot';
-import TakeSnapshotWithMap from './components/TakeSnapshotWithMap';
-import GetZoom from './components/GetZoom';
-import GetCenter from './components/GetCenter';
-import UserLocationChange from './components/UserLocationChange';
+// import SetPitch from './components/SetPitch';
+// import SetBearing from './components/SetBearing';
+// import ShowClick from './components/ShowClick';
+// import FlyTo from './components/FlyTo';
+// import FitBounds from './components/FitBounds';
+// import SetUserTrackingModes from './components/SetUserTrackingModes';
+// import SetUserLocationVerticalAlignment from './components/SetUserLocationVerticalAlignment';
+// import ShowRegionChange from './components/ShowRegionChange';
+// import CustomIcon from './components/CustomIcon';
+// import YoYo from './components/YoYo';
+// import EarthQuakes from './components/EarthQuakes';
+// import GeoJSONSource from './components/GeoJSONSource';
+// import WatercolorRasterTiles from './components/WatercolorRasterTiles';
+// import TwoByTwo from './components/TwoByTwo';
+// import IndoorBuilding from './components/IndoorBuilding';
+// import QueryAtPoint from './components/QueryAtPoint';
+// import QueryWithRect from './components/QueryWithRect';
+// import ShapeSourceIcon from './components/ShapeSourceIcon';
+ import CustomVectorSource from './components/CustomVectorSource';
+// import ShowPointAnnotation from './components/ShowPointAnnotation';
+// import CreateOfflineRegion from './components/CreateOfflineRegion';
+// import DriveTheLine from './components/DriveTheLine';
+// import ImageOverlay from './components/ImageOverlay';
+// import DataDrivenCircleColors from './components/DataDrivenCircleColors';
+// import ChoroplethLayerByZoomLevel from './components/ChoroplethLayerByZoomLevel';
+// import PointInMapView from './components/PointInMapView';
+// import TakeSnapshot from './components/TakeSnapshot';
+// import TakeSnapshotWithMap from './components/TakeSnapshotWithMap';
+ import GetZoom from './components/GetZoom';
+ import GetCenter from './components/GetCenter';
+ import UserLocationChange from './components/UserLocationChange';
 
 const styles = StyleSheet.create({
   noPermissionsText: {
@@ -91,40 +91,40 @@ class ExampleItem {
 
 const Examples = [
   new ExampleItem('Show Map', ShowMap),
-  new ExampleItem('Set Pitch', SetPitch),
-  new ExampleItem('Set Bearing', SetBearing),
-  new ExampleItem('Show Click', ShowClick),
-  new ExampleItem('Fly To', FlyTo),
-  new ExampleItem('Fit Bounds', FitBounds),
-  new ExampleItem('Set User Tracking Modes', SetUserTrackingModes),
-  new ExampleItem(
-    'Set User Location Vertical Alignment',
-    SetUserLocationVerticalAlignment,
-  ),
-  new ExampleItem('Show Region Change', ShowRegionChange),
-  new ExampleItem('Custom Icon', CustomIcon),
-  new ExampleItem('Yo Yo Camera', YoYo),
-  new ExampleItem('Clustering Earthquakes', EarthQuakes),
-  new ExampleItem('GeoJSON Source', GeoJSONSource),
-  new ExampleItem('Watercolor Raster Tiles', WatercolorRasterTiles),
-  new ExampleItem('Two Map Views', TwoByTwo),
-  new ExampleItem('Indoor Building Map', IndoorBuilding),
-  new ExampleItem('Query Feature Point', QueryAtPoint),
-  new ExampleItem('Query Features Bounding Box', QueryWithRect),
-  new ExampleItem('Shape Source From Icon', ShapeSourceIcon),
-  new ExampleItem('Custom Vector Source', CustomVectorSource),
-  new ExampleItem('Show Point Annotation', ShowPointAnnotation),
-  new ExampleItem('Create Offline Region', CreateOfflineRegion),
-  new ExampleItem('Animation Along a Line', DriveTheLine),
-  new ExampleItem('Image Overlay', ImageOverlay),
-  new ExampleItem('Data Driven Circle Colors', DataDrivenCircleColors),
-  new ExampleItem('Choropleth Layer By Zoom Level', ChoroplethLayerByZoomLevel),
-  new ExampleItem('Get Pixel Point in MapView', PointInMapView),
-  new ExampleItem('Take Snapshot Without Map', TakeSnapshot),
-  new ExampleItem('Take Snapshot With Map', TakeSnapshotWithMap),
-  new ExampleItem('Get Current Zoom', GetZoom),
-  new ExampleItem('Get Center', GetCenter),
-  new ExampleItem('User Location Updates', UserLocationChange),
+  // new ExampleItem('Set Pitch', SetPitch),
+  // new ExampleItem('Set Bearing', SetBearing),
+  // new ExampleItem('Show Click', ShowClick),
+  // new ExampleItem('Fly To', FlyTo),
+  // new ExampleItem('Fit Bounds', FitBounds),
+  // new ExampleItem('Set User Tracking Modes', SetUserTrackingModes),
+  // new ExampleItem(
+  //   'Set User Location Vertical Alignment',
+  //   SetUserLocationVerticalAlignment,
+  // ),
+  // new ExampleItem('Show Region Change', ShowRegionChange),
+  // new ExampleItem('Custom Icon', CustomIcon),
+  // new ExampleItem('Yo Yo Camera', YoYo),
+  // new ExampleItem('Clustering Earthquakes', EarthQuakes),
+  // new ExampleItem('GeoJSON Source', GeoJSONSource),
+  // new ExampleItem('Watercolor Raster Tiles', WatercolorRasterTiles),
+  // new ExampleItem('Two Map Views', TwoByTwo),
+  // new ExampleItem('Indoor Building Map', IndoorBuilding),
+  // new ExampleItem('Query Feature Point', QueryAtPoint),
+  // new ExampleItem('Query Features Bounding Box', QueryWithRect),
+  // new ExampleItem('Shape Source From Icon', ShapeSourceIcon),
+   new ExampleItem('Custom Vector Source', CustomVectorSource),
+  // new ExampleItem('Show Point Annotation', ShowPointAnnotation),
+  // new ExampleItem('Create Offline Region', CreateOfflineRegion),
+  // new ExampleItem('Animation Along a Line', DriveTheLine),
+  // new ExampleItem('Image Overlay', ImageOverlay),
+  // new ExampleItem('Data Driven Circle Colors', DataDrivenCircleColors),
+  // new ExampleItem('Choropleth Layer By Zoom Level', ChoroplethLayerByZoomLevel),
+  // new ExampleItem('Get Pixel Point in MapView', PointInMapView),
+  // new ExampleItem('Take Snapshot Without Map', TakeSnapshot),
+ //  new ExampleItem('Take Snapshot With Map', TakeSnapshotWithMap),
+   new ExampleItem('Get Current Zoom', GetZoom),
+   new ExampleItem('Get Center', GetCenter),
+   new ExampleItem('User Location Updates', UserLocationChange),
 ];
 
 class App extends React.Component {

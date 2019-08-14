@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
-import MapboxGL from '@mapbox/react-native-mapbox-gl';
+import MapboxGL from '@react-native-mapbox-gl/maps';
 import {Slider} from 'react-native-elements';
 
 import sheet from '../styles/sheet';
@@ -50,7 +50,8 @@ class WatercolorRasterTiles extends React.Component {
       <Page {...this.props}>
         <MapboxGL.MapView
           zoomLevel={16}
-          centerCoordinate={SF_OFFICE_COORDINATE}
+          // centerCoordinate={SF_OFFICE_COORDINATE}
+          centerCoordinate={[ 113.26147, 23.13162]}
           style={sheet.matchParent}
         >
           <MapboxGL.RasterSource {...rasterSourceProps}>
