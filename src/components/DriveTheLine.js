@@ -13,7 +13,7 @@ import BaseExamplePropTypes from './common/BaseExamplePropTypes';
 import Page from './common/Page';
 import PulseCircleLayer from './common/PulseCircleLayer';
 
-const SF_ZOO_COORDINATE = [-122.505412, 37.737463];
+const SF_ZOO_COORDINATE = [113.31931876194517, 23.150404470231246]
 
 const styles = StyleSheet.create({
   buttonCnt: {
@@ -94,6 +94,9 @@ class DriveTheLine extends React.Component {
     this.setState({
       route: makeLineString(res.entity.routes[0].geometry.coordinates),
     });
+
+    console.warn(this.state.route);
+    console.warn('......');
   }
 
   componentWillUnmount() {
@@ -199,7 +202,7 @@ class DriveTheLine extends React.Component {
         <MapboxGL.MapView
           zoomLevel={11}
           ref={c => (this._map = c)}
-          centerCoordinate={[-122.452652, 37.762963]}
+          centerCoordinate={SF_OFFICE_COORDINATE}
           style={sheet.matchParent}
           styleURL={MapboxGL.StyleURL.Dark}
         >

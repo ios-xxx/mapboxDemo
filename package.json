@@ -9,7 +9,6 @@
     "pack:gl": "./scripts/npm_pack_rngl.sh",
     "clean:node:modules": "./scripts/clean_node_modules.sh",
     "preinstall": "npm run pack:gl",
-    "postinstall": "node ./scripts/set_access_token.js",
     "test": "jest"
   },
   "dependencies": {
