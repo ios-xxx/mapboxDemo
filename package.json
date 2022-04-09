@@ -21,7 +21,7 @@
     "@turf/nearest": "^4.7.3",
     "install": "^0.12.2",
     "mapbox": "^1.0.0-beta10",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "npm": "^5.10.0",
     "prop-types": "^15.7.2",
     "react": "16.8.3",
